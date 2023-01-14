@@ -42,7 +42,7 @@ const Home: FC = () => {
         <meta property="og:url" content="https://splatboy-dev.xyz" />
         <meta property="og:description" content="Site description" />
         <meta name="theme-color" content="#FFF1"></meta>
-        <link rel="icon" href="../../favicon.ico" />
+        <link rel="icon" href="https://splatboy-dev.xyz/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
