@@ -10,7 +10,7 @@ const Picture: FC = () => {
       layout
     >
       <motion.div
-        className="rounded-md overflow-hidden border-2 border-indigo-500 drop-shadow-lg brightness-125"
+        className="rounded-md overflow-hidden border-2 border-indigo-500 drop-shadow-lg brightness-110"
         animate={{y:10, transition:{duration: 2, ease: "easeInOut", repeat:Infinity, repeatType: "reverse"}}}
         initial={{y: -10}}
         >
