@@ -8,7 +8,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     try{
     window.addEventListener("load", function () {
-      navigator.serviceWorker.register("../../public/arc-sw.js").then(
+      navigator.serviceWorker.register("../../arc-sw.js").then(
         function (registration) {
           console.log("Service Worker registration successful with scope: ", registration.scope);
         },
