@@ -25,22 +25,28 @@ const Tools: FC = () => {
           </h1>
           <h2>I have used or am currently using the following for frontend webdev:</h2>
           <ul className="list-disc text-white-300">
-            <li>&emsp;HTML, CSS, JavaScript</li>
+            <li>&emsp;HTML, CSS, JavaScript (TypeScript is much better)</li>
             <li>&emsp;ReactJS, NextJS, Remix, THREE</li>
+            <li>&emsp;Vue</li>
             <li>&emsp;TailwindCSS</li>
           </ul>
         </div>
         <div className="bg-bg-surface bg-gradient-to-r from-cyan-500 to-blue-500 outline outline-0 outline-blue-500 rounded-lg py-8 px-16 flex flex-col h-85 space-y-6 items-start md:col-span-2 lg:col-span-1 transition-all hover:outline-4">
           <FaAnchor color="#C3C1BA" size={100} className="self-center" />
           <h1 className="font-openSans font-bold text-3xl self-center">
-            High-level Languages
+            Generally Used Languages
           </h1>
-          <h2>I have used or am currently using the following for frontend webdev:</h2>
+          <h2>I have used or am currently using the following languages:</h2>
           <ul className="list-decimal text-white-300">
             <li>C</li>
+            <li>C#</li>
+            <li>Python</li>
             <li>C++</li>
+            <li>Shell</li>
+            <li>GML</li>
+            <li>GLSL</li>
             <li>Java</li>
-            <li className="text-red-500">Rust? 🦀</li>
+            <li className="text-red-500">Rust 🦀</li>
           </ul>
         </div>
       </div>
