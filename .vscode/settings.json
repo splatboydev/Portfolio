@@ -1,0 +1,14 @@
+{
+  "grammarly.overrides": [
+    {
+      "files": ["**/README.md"],
+      "config": {
+        "audience": "expert",
+        "dialect": "american",
+        "domain": "technical",
+        "emotions": ["analytical"],
+        "goals": ["inform", "describe"]
+      }
+    }
+  ]
+}
