@@ -7,7 +7,6 @@ import { useAppDispatch } from "../redux/reduxHooks";
 
 const App = ({ Component, pageProps }: AppProps) => {
 
-  const dispatch = useAppDispatch();
   useEffect(() => {
     try{
     window.addEventListener("open", function () {
@@ -23,7 +22,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   } catch (err) {
     console.error(err);
   }
-  }, [dispatch])
+  }, [])
 
   return (
     <Provider store={store}>
