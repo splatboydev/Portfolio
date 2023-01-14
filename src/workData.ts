@@ -6,6 +6,12 @@ const projects = [
     repoLink: "https://github.com/splatboydev/Freon-Browser",
   },
   {
+    title: "Gluon",
+    techTitle: "Firefox tool",
+    description: "Gluon is a Firefox build tool to easily develop your own Firefox forks. I frequently contribute to the development of gluon.",
+    repoLink: "https://github.com/pulse-browser/gluon"
+  },
+  {
     title: "Portfolio",
     techTitle: "Web (Next, TSX)",
     description: "My portfolio website.",
