@@ -40,7 +40,7 @@ const Home: FC = () => {
         <meta property="og:title" content="Splatboy Dev's portfolio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://splatboy-dev.xyz" />
-        <meta property="og:description" content="Site description" />
+        <meta property="og:description" content="Splatboy Dev's portfolio website, built with Next.js." />
         <meta name="theme-color" content="#FFF1"></meta>
         <link rel="icon" href="static/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

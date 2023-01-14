@@ -24,7 +24,7 @@ const Contact: FC = () => {
         >
           <div className="flex flex-col space-y-8">
             <h1 className="font-medium text-3xl md:text-5xl">
-              Want to contact me? Sure!
+              Want to contact me? Sure, just don&apos;t send me snail mail.
             </h1>
             <p className="text-white-secondary text-xl md:text-2xl font-light md:w-2/3">
               You can find me on these platforms:
@@ -39,7 +39,7 @@ const Contact: FC = () => {
             <li>
               <a
                 href="https://github.com/splatboydev"
-                className="flex space-x-5 items-center hover:text-white"
+                className="flex space-x-5 items-center hover:text-slate-300"
               >
                 <FaGithub size={30} color="#3b82f6" />
                 <p>Github</p>
@@ -48,7 +48,7 @@ const Contact: FC = () => {
             <li>
               <a
                 href="mailto:contact@splatboy-dev.xyz"
-                className="flex space-x-5 items-center hover:text-white"
+                className="flex space-x-5 items-center hover:text-slate-300"
               >
                 <HiMail size={30} color="#3b82E1" />
                 <p>contact@splatboy-dev.xyz</p>

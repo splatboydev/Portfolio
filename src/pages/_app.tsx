@@ -3,8 +3,11 @@ import type { AppProps } from "next/app";
 import store from "../redux/store";
 import { Provider } from "react-redux";
 import { useEffect } from "react";
+import { useAppDispatch } from "../redux/reduxHooks";
 
 const App = ({ Component, pageProps }: AppProps) => {
+
+  const dispatch = useAppDispatch();
   useEffect(() => {
     try{
     window.addEventListener("open", function () {
@@ -20,7 +23,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   } catch (err) {
     console.error(err);
   }
-  }, [])
+  }, [dispatch])
 
   return (
     <Provider store={store}>

@@ -1,7 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
 
 const Picture: FC = () => {
   return (
@@ -19,7 +18,7 @@ const Picture: FC = () => {
           alt="Profile"
           width={110}
           height={110}
-          priority={false}
+          priority={true}
         />
       </motion.div>
       <motion.h1
