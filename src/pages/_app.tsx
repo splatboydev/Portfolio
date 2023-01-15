@@ -7,8 +7,7 @@ import { useEffect } from "react";
 const App = ({ Component, pageProps }: AppProps) => {
 
   useEffect(() => {
-    try{
-    window.addEventListener("open", function () {
+    window.addEventListener("load", function () {
       navigator.serviceWorker.register("../../arc-sw.js").then(
         function (registration) {
           console.log("Arc service worker successful with scope: ", registration.scope);
@@ -18,9 +17,6 @@ const App = ({ Component, pageProps }: AppProps) => {
         }
       );
     });
-  } catch (err) {
-    console.error(err);
-  }
   }, [])
   
   return (

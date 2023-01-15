@@ -1,3 +1,4 @@
+import React, { lazy } from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class PortfolioDocument extends Document {
@@ -6,6 +7,7 @@ class PortfolioDocument extends Document {
       <Html>
         <lang>en_US</lang>
         <Head>
+          <meta name="viewport" content="width=device-width" />
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
             rel="stylesheet"
