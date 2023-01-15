@@ -91,10 +91,10 @@ const Nav: FC = () => {
                   key={animationState}
                 >
                   <Image
-                    src="/splatboy-dev.png"
+                    src="/splatboy-dev.webp"
                     alt="image"
-                    width={3000}
-                    height={3000}
+                    width={100}
+                    height={100}
                     className="max-h-full max-w-full object-cover"
                   />
                 </motion.figure>

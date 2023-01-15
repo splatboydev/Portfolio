@@ -23,7 +23,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     console.error(err);
   }
   }, [])
-
+  
   return (
     <Provider store={store}>
       <Component {...pageProps} />

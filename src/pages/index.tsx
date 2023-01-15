@@ -49,7 +49,7 @@ const Home: FC = () => {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-        <link rel="preload" as="image" href="./splatboy-dev.png" sizes="100%" />
+        <link rel="preload" as="image" href="./splatboy-dev.webp" sizes="100%" />
       </Head>
       <AnimateSharedLayout>
         {typeof window !== "undefined" && <DynamicNav />}

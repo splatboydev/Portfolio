@@ -14,7 +14,7 @@ const Picture: FC = () => {
         initial={{y: -10}}
         >
         <Image
-          src="/splatboy-dev.png"
+          src="/splatboy-dev.webp"
           alt="Profile"
           width={110}
           height={110}
