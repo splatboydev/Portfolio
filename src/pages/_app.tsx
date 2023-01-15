@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import store from "../redux/store";
 import { Provider } from "react-redux";
 import { useEffect } from "react";
-import { useAppDispatch } from "../redux/reduxHooks";
+import Script from 'next/script';
 
 const App = ({ Component, pageProps }: AppProps) => {
 
@@ -26,6 +26,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   
   return (
     <Provider store={store}>
+      <Script async={true} strategy="worker" src="https://arc.io/widget.min.js#dPRGqGD4"></Script>
       <Component {...pageProps} />
     </Provider>
   );

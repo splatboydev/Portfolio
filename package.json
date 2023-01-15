@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@builder.io/partytown": "^0.7.4",
     "@reduxjs/toolkit": "^1.7.1",
     "framer-motion": "^6.0.0",
     "next": "^12.0.8",

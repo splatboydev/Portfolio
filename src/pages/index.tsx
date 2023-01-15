@@ -7,6 +7,7 @@ import { FC, useEffect, useState } from "react";
 import ScrollTop from "../components/ScrollTop";
 import dynamic from "next/dynamic";
 import { AnimateSharedLayout } from "framer-motion";
+import Script from 'next/script';
 
 const DynamicNav = dynamic(() => import("../components/Nav"));
 
@@ -49,7 +50,7 @@ const Home: FC = () => {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-        <link rel="preload" as="image" href="./splatboy-dev.webp" sizes="100%" />
+        <link href="./splatboy-dev.webp" sizes="100%" />
       </Head>
       <AnimateSharedLayout>
         {typeof window !== "undefined" && <DynamicNav />}
