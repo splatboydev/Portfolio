@@ -17,7 +17,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         }
       );
     });
-  }, [])
+  }, []);
   
   return (
     <Provider store={store}>

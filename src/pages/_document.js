@@ -4,8 +4,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class PortfolioDocument extends Document {
   render() {
     return (
-      <Html>
-        <lang>en_US</lang>
+      <Html lang='en'>
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
