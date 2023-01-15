@@ -3,9 +3,9 @@ import type { AppProps } from "next/app";
 import store from "../redux/store";
 import { Provider } from "react-redux";
 import { useEffect } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 const App = ({ Component, pageProps }: AppProps) => {
-
   useEffect(() => {
     window.addEventListener("load", function () {
       navigator.serviceWorker.register("../../arc-sw.js").then(
@@ -22,6 +22,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <Provider store={store}>
       <Component {...pageProps} />
+      <Analytics />
     </Provider>
   );
 };
