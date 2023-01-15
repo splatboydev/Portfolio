@@ -1,4 +1,3 @@
-import React, { lazy } from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class PortfolioDocument extends Document {
@@ -6,13 +5,13 @@ class PortfolioDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <link
+          <link async
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
-            rel="stylesheet"
+            rel='preload' as="stylesheet"
           />
-          <link
+          <link async
            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
-            rel="stylesheet"
+            rel="preload" as='stylesheet'
           />
           <link rel="shortcut icon" href="/static/favicon.ico" />
           <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />

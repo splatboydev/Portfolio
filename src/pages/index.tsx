@@ -7,7 +7,6 @@ import { FC, useEffect, useState } from "react";
 import ScrollTop from "../components/ScrollTop";
 import dynamic from "next/dynamic";
 import { AnimateSharedLayout } from "framer-motion";
-import Script from 'next/script';
 import { Partytown } from '@builder.io/partytown/react';
 
 const DynamicNav = dynamic(() => import("../components/Nav"));

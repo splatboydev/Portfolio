@@ -30,7 +30,7 @@ const WorkCard: FC<Props> = ({
           : { x: index % 2 === 0 ? -50 : 50, opacity: 0 },
       }}
       transition={{
-        duration: 0.6,
+        duration: 0.8,
         delay: index + 1 !== 1 ? (index + 1) / 10 : 0,
         type: "spring",
         stiffness: 80,
