@@ -131,7 +131,7 @@ const Nav: FC = () => {
         )}
       </motion.div>
       {!isTabletOrMobile && (
-        <div className="text-white-secondary flex items-center space-x-16 rounded-md">
+        <div className="text-[#FFFFFFFF] flex items-center space-x-16 rounded-md">
           <Link className="rounded-md border-4 border-sky-700 bg-sky-700" to="work" activeClass="active" smooth={true} duration={200}> My works</Link>
           <Link className="rounded-md border-4 border-sky-700 bg-sky-700" to="tools" activeClass="active" smooth={true} duration={200}>Tools</Link>
           <Link className="rounded-md border-4 border-sky-700 bg-sky-700" to="contact" activeClass="active" smooth={true} duration={200}>Contact</Link>
@@ -140,7 +140,7 @@ const Nav: FC = () => {
       <AnimatePresence>
         {isTabletOrMobile && hamburgerState && (
           <motion.div
-            className="text-white-secondary flex items-center flex-col text-xl space-y-4 mt-6"
+            className="text-white-100 flex items-center flex-col text-xl space-y-4 mt-6"
             key={`${hamburgerState}`}
             layout
           >
