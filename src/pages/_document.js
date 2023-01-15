@@ -1,13 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import "../../public/arc-sw.js";
-import { Partytown } from '@builder.io/partytown';
 
 class PortfolioDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
-        <script async src="https://arc.io/widget.min.js#dPRGqGD4"></script>
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
             rel="stylesheet"

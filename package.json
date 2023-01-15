@@ -5,7 +5,8 @@
   "author": "splatboydev",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "partytown": "partytown copylib public/~partytown",
+    "build": "npm run partytown && next build && next export",
     "start": "next start"
   },
   "dependencies": {

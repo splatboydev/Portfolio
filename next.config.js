@@ -5,7 +5,7 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    nextScriptWorkers: true,
+    nextScriptWorkers: false,
   },
   images: {
     unoptimized: false,

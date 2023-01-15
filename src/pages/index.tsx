@@ -8,6 +8,7 @@ import ScrollTop from "../components/ScrollTop";
 import dynamic from "next/dynamic";
 import { AnimateSharedLayout } from "framer-motion";
 import Script from 'next/script';
+import { Partytown } from '@builder.io/partytown/react';
 
 const DynamicNav = dynamic(() => import("../components/Nav"));
 
@@ -51,6 +52,7 @@ const Home: FC = () => {
           crossOrigin="true"
         />
         <link href="./splatboy-dev.webp" sizes="100%" />
+        <Partytown debug={true} forward={['dataLayer.push']} />
       </Head>
       <AnimateSharedLayout>
         {typeof window !== "undefined" && <DynamicNav />}
