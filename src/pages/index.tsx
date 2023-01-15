@@ -34,6 +34,7 @@ const Home: FC = () => {
   return (
     <>
       <Head>
+        <Partytown debug={false} forward={['dataLayer.push']} />
         <title>Splatboy Dev</title>
         <meta
           name="description"
@@ -52,7 +53,6 @@ const Home: FC = () => {
           crossOrigin="true"
         />
         <link href="./splatboy-dev.webp" sizes="100%" />
-        <Partytown debug={true} forward={['dataLayer.push']} />
       </Head>
       <AnimateSharedLayout>
         {typeof window !== "undefined" && <DynamicNav />}

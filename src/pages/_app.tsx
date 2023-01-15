@@ -25,7 +25,6 @@ const App = ({ Component, pageProps }: AppProps) => {
   
   return (
     <Provider store={store}>
-      <script async={true} type="text/partytown" src="https://arc.io/widget.min.js#dPRGqGD4"></script>
       <Component {...pageProps} />
     </Provider>
   );

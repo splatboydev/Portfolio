@@ -26,7 +26,7 @@ const Contact: FC = () => {
             <h1 className="font-medium text-3xl md:text-5xl">
               Want to contact me? Sure, just don&apos;t send me snail mail.
             </h1>
-            <p className="text-white-secondary text-xl md:text-2xl font-light md:w-2/3">
+            <p className="text-white-secondary text-xl md:text-2xl md:w-2/3">
               You can find me on these platforms:
             </p>
           </div>

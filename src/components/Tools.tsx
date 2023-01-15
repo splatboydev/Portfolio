@@ -37,7 +37,7 @@ const Tools: FC = () => {
             Generally Used Languages
           </h1>
           <h2>I have used or am currently using the following languages:</h2>
-          <ul className="list-decimal text-white-300">
+          <ul className="list-disc text-white-300">
             <li>C</li>
             <li>C#</li>
             <li>Python</li>
@@ -46,7 +46,7 @@ const Tools: FC = () => {
             <li>GML</li>
             <li>GLSL</li>
             <li>Java</li>
-            <li className="text-red-500">Rust 🦀</li>
+            <li>Rust 🦀</li>
           </ul>
         </div>
       </div>

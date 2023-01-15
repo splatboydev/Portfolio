@@ -4,6 +4,7 @@ class PortfolioDocument extends Document {
   render() {
     return (
       <Html>
+        <lang>en_US</lang>
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
@@ -18,6 +19,7 @@ class PortfolioDocument extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
           <link rel="manifest" href="/static/site.webmanifest" />
+          <script async type="text/partytown" src="https://arc.io/widget.min.js#dPRGqGD4"></script>
         </Head>
         <body>
           <Main />
