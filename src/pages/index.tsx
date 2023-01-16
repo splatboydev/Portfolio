@@ -6,13 +6,15 @@ import Contact from "../components/Contact";
 import { FC, useEffect, useState } from "react";
 import ScrollTop from "../components/ScrollTop";
 import dynamic from "next/dynamic";
-const LayoutGroup = dynamic(() => import('framer-motion').then((mod) => mod.LayoutGroup), {ssr: false});
 import { Partytown } from '@builder.io/partytown/react';
 
 const DynamicNav = dynamic(() => import("../components/Nav"));
 
 const Home: FC = () => {
   const [scrollTop, setScrollTop] = useState(false);
+  const LayoutGroup = dynamic(() => import('framer-motion').then((mod) => mod.LayoutGroup), {
+    ssr: false,
+  })
 
   const toggleVisibility = () => {
     if (typeof window !== "undefined") {
