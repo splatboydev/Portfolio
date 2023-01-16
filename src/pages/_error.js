@@ -12,5 +12,5 @@ export default Error
 
 export const getStaticProps = ({ res, err }) => {
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404
-  return { statusCode }
+  return { props: {title: "Error" + statusCode} }
 }
