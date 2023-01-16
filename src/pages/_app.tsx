@@ -6,7 +6,7 @@ import { StrictMode, useEffect } from "react";
 
 const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
-    window.addEventListener("load", function () {
+    window.addEventListener("DOMContentLoaded", function () {
       navigator.serviceWorker.register("../../arc-sw.js").then(
         function (registration) {
           console.log("Arc service worker successful with scope: ", registration.scope);

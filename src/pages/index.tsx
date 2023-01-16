@@ -7,6 +7,7 @@ import { FC, useEffect, useState } from "react";
 import ScrollTop from "../components/ScrollTop";
 import dynamic from "next/dynamic";
 import { Partytown } from '@builder.io/partytown/react';
+import { FaLess } from "react-icons/fa";
 const LayoutGroup = dynamic(() => import('framer-motion').then((mod) => mod.LayoutGroup), {
   ssr: false,
 })
@@ -35,6 +36,7 @@ const Home: FC = () => {
   return (
     <>
       <Head>
+        <Partytown debug={false} forward={['dataLayer.push']}/>
         <title>Splatboy Dev</title>
         <meta
           name="description"
@@ -48,11 +50,6 @@ const Home: FC = () => {
         <meta name="theme-color" content="#FFF1"></meta>
         <link rel="icon" href="static/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
         <link href="./splatboy-dev.webp" sizes="100%" />
       </Head>
       <LayoutGroup>
