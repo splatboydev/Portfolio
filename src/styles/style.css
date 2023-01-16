@@ -33,7 +33,6 @@ a:hover {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  will-change: transform;
   animation: gradient-big-text 4s ease-in-out 1 forwards;
 }
 
@@ -48,11 +47,11 @@ a:hover {
 
 @keyframes gradient-big-text {
   0% {
-    background-size: scale(5);
-    background-position: translate(-1,-1);
+    background-size: 300px 300px;
+    background-position: 200%, 200%;
   }
   100% {
-    background-size: scale(1);
+    background-size: 100%, 100%;
   }
 }
 
