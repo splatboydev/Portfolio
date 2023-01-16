@@ -22,7 +22,7 @@
     "react-scroll": "^1.8.9"
   },
   "devDependencies": {
-    "@types/node": "^17.0.13",
+    "@types/node": "^18.11.18",
     "@types/react": "^17.0.38",
     "@types/react-scroll": "^1.8.6",
     "autoprefixer": "^10.4.2",
