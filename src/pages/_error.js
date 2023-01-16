@@ -8,9 +8,9 @@ function Error({ statusCode }) {
   )
 }
 
-Error.getStaticProps = ({ res, err }) => {
+export default Error
+
+export const getStaticProps = ({ res, err }) => {
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404
   return { statusCode }
 }
-
-export default Error
