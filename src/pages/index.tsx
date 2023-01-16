@@ -35,7 +35,6 @@ const Home: FC = () => {
   return (
     <>
       <Head>
-        <Partytown debug={false} forward={['dataLayer.push']} />
         <title>Splatboy Dev</title>
         <meta
           name="description"
