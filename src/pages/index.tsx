@@ -6,7 +6,7 @@ import Contact from "../components/Contact";
 import { FC, useEffect, useState } from "react";
 import ScrollTop from "../components/ScrollTop";
 import dynamic from "next/dynamic";
-import { AnimateSharedLayout } from "framer-motion";
+const LayoutGroup = dynamic(() => import('framer-motion').then((mod) => mod.LayoutGroup), {ssr: false})
 import { Partytown } from '@builder.io/partytown/react';
 
 const DynamicNav = dynamic(() => import("../components/Nav"));
@@ -54,13 +54,13 @@ const Home: FC = () => {
         />
         <link href="./splatboy-dev.webp" sizes="100%" />
       </Head>
-      <AnimateSharedLayout>
+      <LayoutGroup>
         {typeof window !== "undefined" && <DynamicNav />}
         <Picture />
         <Work />
         <Tools />
         <Contact />
-      </AnimateSharedLayout>
+      </LayoutGroup>
       {scrollTop && <ScrollTop />}
     </>
   );

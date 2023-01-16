@@ -37,7 +37,7 @@ const WorkCard: FC<Props> = ({
         damping: 15
       }}
       viewport={{ once: true }}
-      className="bg-bg-surface text-white px-10 py-8 flex flex-col space-y-2 rounded-sm transition-all duration-200 transform-gpu hover:drop-shadow-2xl"
+      className="bg-bg-surface text-white px-10 py-8 flex flex-col space-y-2 rounded-sm transition-all duration-200 hover:drop-shadow-2xl"
     >
       <p className="text-white-secondary uppercase font-medium tracking-widest text-sm">
         {techTitle}

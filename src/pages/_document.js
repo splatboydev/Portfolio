@@ -7,11 +7,11 @@ class PortfolioDocument extends Document {
         <Head>
           <link async
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
-            rel='preload' as="stylesheet"
+            as="style"
           />
           <link async
            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
-            rel="preload" as='stylesheet'
+            as='style'
           />
           <link rel="shortcut icon" href="/static/favicon.ico" />
           <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
