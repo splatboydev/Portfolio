@@ -28,12 +28,35 @@ a:hover {
   text-decoration: underline;
 }
 
+@keyframes gradient-big-text {
+  0% {
+    background-position: 0%, 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-size: 0%, 50%;
+  }
+}
+
 .gradient-text {
-  background: url(../../public/gradient.webp);
+  background-color: #2ecc71;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: gradient-big-text 4s ease-in-out 1 forwards;
+  animation: hue 20s linear .2s infinite reverse;
+}
+
+.gradient-text::before {
+  background: linear-gradient(105deg, rgba(255, 190, 0, 0), #ffbe00);
+  animation: hue 20s linear 3s infinite;
+}
+
+@keyframes hue {
+  to {
+    filter: hue-rotate(1turn);
+  }
 }
 
 .name-gradient {
@@ -41,18 +64,7 @@ a:hover {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  will-change: transform;
   /* animation: name-gradient 2s linear infinite; */
-}
-
-@keyframes gradient-big-text {
-  0% {
-    background-size: 300px 300px;
-    background-position: 200%, 200%;
-  }
-  100% {
-    background-size: 100%, 100%;
-  }
 }
 
 ::-webkit-scrollbar {

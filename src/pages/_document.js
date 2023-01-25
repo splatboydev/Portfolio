@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 class PortfolioDocument extends Document {
   render() {
@@ -18,7 +19,7 @@ class PortfolioDocument extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
           <link rel="manifest" href="/static/site.webmanifest" />
-          <script async src="https://arc.io/widget.min.js#dPRGqGD4"></script>
+          <Script async src="https://arc.io/widget.min.js#dPRGqGD4" />
         </Head>
         <body>
           <Main />
