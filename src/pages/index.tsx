@@ -47,7 +47,7 @@ const Home: FC = () => {
         <meta property="og:url" content="https://splatboy-dev.xyz" />
         <meta property="og:description" content="Splatboy Dev's portfolio website, built with Next.js." />
         <meta property="description" content="Splatboy Dev's portfolio website, built with Next.js." />
-        <meta name="theme-color" content="#FFF1"></meta>
+        <meta name="theme-color" content="#FFF1" />
         <link rel="icon" href="static/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="./splatboy-dev.webp" sizes="100%" />
