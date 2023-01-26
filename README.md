@@ -39,3 +39,5 @@ If you have any feedback, please reach out to me via the issues/PR page. Otherwi
 
 - [@splatboydev](https://www.github.com/splatboydev)
 
+## License
+This project is licensed under the MIT license.
