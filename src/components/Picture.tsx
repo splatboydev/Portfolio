@@ -18,7 +18,7 @@ const Picture: FC = () => {
           alt="Profile"
           width={110}
           height={110}
-          priority={true}
+          priority
         />
       </motion.div>
       <motion.h1
