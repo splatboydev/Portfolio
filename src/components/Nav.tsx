@@ -118,7 +118,7 @@ const Nav: FC = () => {
                 marginBottom: hamburgerState ? "20px" : "10px",
               }}
               className="bg-white h-0.5 rounded-full w-9"
-            ></motion.div>
+             />
             <motion.div
               animate={{
                 rotate: hamburgerState ? -40 : 0,
@@ -126,7 +126,7 @@ const Nav: FC = () => {
                 marginTop: hamburgerState ? "20px" : "10px",
               }}
               className="bg-white h-0.5 rounded-full w-9"
-            ></motion.div>
+             />
           </div>
         )}
       </motion.div>
