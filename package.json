@@ -16,7 +16,7 @@
     "@types/react": "^18.0.27",
     "@types/react-scroll": "^1.8.6",
     "autoprefixer": "^10.4.13",
-    "eslint": "^8.32.0",
+    "eslint": "^8.33.0",
     "eslint-config-next": "^13.1.6",
     "framer-motion": "^8.5.5",
     "next": "^13.1.6",
