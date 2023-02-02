@@ -9,7 +9,7 @@ const Picture: FC = () => {
       layout
     >
       <motion.div
-        className="rounded-full overflow-hidden border-2 border-indigo-500 drop-shadow-lg brightness-110 aspect-square"
+        className="rounded-full overflow-hidden border-2 border-indigo-500 drop-shadow-lg transition-all hover:brightness-110 aspect-square"
         animate={{y:10, transition:{duration: 2, ease: "easeInOut", repeat:Infinity, repeatType: "reverse"}}}
         initial={{y: -10}}
         >
