@@ -25,10 +25,10 @@ const Tools: FC = () => {
           </h1>
           <h2>I have used or am currently using the following for frontend webdev:</h2>
           <ul className="list-disc text-white-300">
-            <li>&emsp;HTML, CSS, JavaScript (TypeScript is much better)</li>
-            <li>&emsp;ReactJS, NextJS, Remix, THREE</li>
-            <li>&emsp;Vue</li>
-            <li>&emsp;TailwindCSS</li>
+            <li>HTML, CSS, JavaScript (TypeScript is much better)</li>
+            <li>ReactJS, NextJS, Remix, THREE</li>
+            <li>Vue</li>
+            <li>TailwindCSS</li>
           </ul>
         </div>
         <div className="bg-bg-surface bg-gradient-to-r from-cyan-500 to-blue-500 outline outline-0 outline-blue-500 rounded-lg py-8 px-16 flex flex-col h-85 space-y-6 items-start md:col-span-2 lg:col-span-1 transition-all hover:outline-4">
