@@ -12,7 +12,7 @@
   "dependencies": {
     "@builder.io/partytown": "^0.7.5",
     "@reduxjs/toolkit": "^1.9.2",
-    "@types/node": "^18.11.18",
+    "@types/node": "^18.11.19",
     "@types/react": "^18.0.27",
     "@types/react-scroll": "^1.8.6",
     "autoprefixer": "^10.4.13",
