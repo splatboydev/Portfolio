@@ -49,7 +49,7 @@ const Home: FC = () => {
         <meta property="description" content="Splatboy Dev's portfolio website, built with Next.js." />
         <meta name="theme-color" content="#FFF1" />
         <link rel="icon" href="static/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com&display=optional" />
         <link href="./splatboy-dev.webp" sizes="100%" />
       </Head>
       <LayoutGroup>
