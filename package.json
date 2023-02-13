@@ -13,7 +13,7 @@
     "@builder.io/partytown": "^0.7.5",
     "@reduxjs/toolkit": "^1.9.2",
     "@types/node": "^18.13.0",
-    "@types/react": "^18.0.27",
+    "@types/react": "^18.0.28",
     "@types/react-scroll": "^1.8.6",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.33.0",
