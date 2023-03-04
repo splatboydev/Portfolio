@@ -1,0 +1,21 @@
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+    
+jobs:
+  merge-dependabot:
+    name: Auto-merge Dependabot PRs
+    if: "github.event.name == 'pull_request_target' && github.actor == 'dependabot[bot]' && contains( github.event.pull_request.labels.*.name, 'java')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Approve
+        uses: hmarr/auto-approve-action@v3.1.0
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Merge
+        uses: pascalgn/automerge-action@v0.15.6
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_LABELS: "dependencies"
+          MERGE_METHOD: "squash"
