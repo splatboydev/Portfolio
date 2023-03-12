@@ -10,13 +10,6 @@ jobs:
     if: "github.event.name == 'pull_request_target' && github.actor == 'dependabot[bot]'"
     runs-on: ubuntu-latest
     steps:
-      - name: Approve
-        uses: hmarr/auto-approve-action@v3.1.0
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-      - name: Merge
-        uses: pascalgn/automerge-action@v0.15.6
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: "dependencies"
-          MERGE_METHOD: "squash"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
