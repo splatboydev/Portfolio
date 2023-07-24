@@ -28,9 +28,8 @@ const Nav: FC = () => {
   }, [dispatch]);
   return (
     <motion.nav
-      className={`flex py-6 px-8 md:px-24 justify-between items-center sticky top-0 bg-bg-surface z-50 overflow-hidden ${
-        isTabletOrMobile ? "flex-col" : "flex-row"
-      }`}
+      className={`flex py-6 px-8 md:px-24 justify-between items-center sticky top-0 bg-bg-surface z-50 overflow-hidden ${isTabletOrMobile ? "flex-col" : "flex-row"
+        }`}
       ref={navRef}
       layout
     >
@@ -41,7 +40,7 @@ const Nav: FC = () => {
         layout
       >
         <motion.div
-          className="flex space-x-6 items-center"
+          className="flex items-center space-x-6"
           onHoverStart={() => {
             setAnimationState("hovered");
           }}
@@ -60,7 +59,7 @@ const Nav: FC = () => {
             className="border border-[#303436] rounded-md flex justify-center items-center overflow-hidden h-12 w-12"
             layout
           >
-            <AnimatePresence exitBeforeEnter>
+            <AnimatePresence mode="wait">
               {animationState === "notHovered" && (
                 <motion.figure
                   animate={{ x: 0, scale: 1, rotate: 0 }}
@@ -83,28 +82,27 @@ const Nav: FC = () => {
                 <motion.figure
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   initial={{ opacity: 0, y: 0, scale: 0 }}
-                  exit={{ 
+                  exit={{
                     x: 100,
                     scale: 0
-                   }}
+                  }}
                   transition={{ duration: 0.8, type: "spring" }}
                   key={animationState}
                 >
                   <Image
-                    src="/splatboy-dev.webp"
+                    src="/shareef.png"
                     alt="image"
                     width={100}
                     height={100}
-                    className="max-h-full max-w-full object-cover"
+                    className="object-cover max-w-full max-h-full"
                   />
                 </motion.figure>
               )}
             </AnimatePresence>
           </motion.div>
           <p
-            className={`font-medium text-xl ${
-              animationState === "hovered" ? "text-sky-400" : "text-white"
-            }`}
+            className={`font-medium text-xl ${animationState === "hovered" ? "text-sky-400" : "text-white"
+              }`}
           >
             Splatboy Dev
           </p>
@@ -118,7 +116,7 @@ const Nav: FC = () => {
                 marginBottom: hamburgerState ? "20px" : "10px",
               }}
               className="bg-white h-0.5 rounded-full w-9"
-             />
+            />
             <motion.div
               animate={{
                 rotate: hamburgerState ? -40 : 0,
@@ -126,21 +124,21 @@ const Nav: FC = () => {
                 marginTop: hamburgerState ? "20px" : "10px",
               }}
               className="bg-white h-0.5 rounded-full w-9"
-             />
+            />
           </div>
         )}
       </motion.div>
       {!isTabletOrMobile && (
         <div className="text-[#FFFFFFFF] flex items-center space-x-16 rounded-md">
-          <Link className="rounded-md border-4 border-sky-700 bg-sky-700" to="work" activeClass="active" smooth duration={200}> My works</Link>
-          <Link className="rounded-md border-4 border-sky-700 bg-sky-700" to="tools" activeClass="active" smooth duration={200}>Tools</Link>
-          <Link className="rounded-md border-4 border-sky-700 bg-sky-700" to="contact" activeClass="active" smooth duration={200}>Contact</Link>
+          <Link className="border-4 rounded-md border-sky-700 bg-sky-700" to="work" activeClass="active" smooth duration={200}> My works</Link>
+          <Link className="border-4 rounded-md border-sky-700 bg-sky-700" to="tools" activeClass="active" smooth duration={200}>Tools</Link>
+          <Link className="border-4 rounded-md border-sky-700 bg-sky-700" to="contact" activeClass="active" smooth duration={200}>Contact</Link>
         </div>
       )}
       <AnimatePresence>
         {isTabletOrMobile && hamburgerState && (
           <motion.div
-            className="text-white-100 flex items-center flex-col text-xl space-y-4 mt-6"
+            className="flex flex-col items-center mt-6 space-y-4 text-xl text-white-100"
             key={`${hamburgerState}`}
             layout
           >

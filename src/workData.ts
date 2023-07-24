@@ -1,22 +1,17 @@
 const projects = [
   {
-    title: "Freon Browser",
-    techTitle: "firefox",
-    description: "A Firefox fork used on my personal devices. Always compiled on Rust nightly.",
-    repoLink: "https://github.com/splatboydev/Freon-Browser",
+    title: "GeoGenius",
+    techTitle: "Web (React, Node.js, Postgres)",
+    description: "Geo Genius is an interactive map-based game that challenges users to guess the country by clicking on the map. The application seamlessly integrates geographical data and user-generated facts about various countries, providing an immersive learning experience.",
+    repoLink: "https://github.com/project-3-group",
   },
   {
-    title: "Gluon",
-    techTitle: "Firefox tool",
-    description: "Gluon is a Firefox build tool to easily develop your own Firefox forks. I frequently contribute to the development of gluon.",
-    repoLink: "https://github.com/pulse-browser/gluon"
-  },
-  {
-    title: "Portfolio",
-    techTitle: "Web (Next, TSX)",
-    description: "My portfolio website.",
-    repoLink: "https://github.com/splatboydev/Portfolio"
+    title: "Attendance Tracker",
+    techTitle: "Python, OpenCV, NumPy, Joblib, Scikit-learn, Flask, HTML, CSS, Bootstrap, SQLAlchemy",
+    description: "Attendace Tracker project is a facial recognition-based system for precise and non-intrusive attendance management. It utilizes advanced algorithms for real-time tracking, ensuring high accuracy and efficiency. The system is designed with a privacy-preserving approach, making it suitable for diverse industries.",
+    repoLink: "https://github.com/ahmaderaqi/Attendance-tracking-midProject/"
   }
 ];
 
 export default projects;
+""

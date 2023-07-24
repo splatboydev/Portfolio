@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { useAppSelector } from "../redux/reduxHooks";
 import { HiMail } from "react-icons/hi";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact: FC = () => {
   const navHeight = useAppSelector(
@@ -11,35 +11,35 @@ const Contact: FC = () => {
   return (
     <section
       id="contact"
-      className="space-y-12 px-8 md:px-24 md:mt-12"
+      className="px-8 space-y-12 md:px-24 md:mt-12"
       style={{ scrollMarginTop: `${navHeight}px` }}
     >
-      <h1 className="text-white font-openSans text-center text-4xl font-bold mt-6 leading-tight tracking-tighter">
+      <h1 className="mt-6 text-4xl font-bold leading-tight tracking-tighter text-center text-white font-openSans">
         Contact me
       </h1>
-      <div className="flex text-white py-8 md:py-20 items-center flex-col md:flex-row">
+      <div className="flex flex-col items-center py-8 text-white md:py-20 md:flex-row">
         <div
           className="flex flex-col items-center"
           style={{ flexBasis: "50%" }}
         >
           <div className="flex flex-col space-y-8">
-            <h1 className="font-medium text-3xl md:text-5xl">
+            <h1 className="text-3xl font-medium md:text-5xl">
               Want to contact me? Sure, just don&apos;t send me snail mail.
             </h1>
-            <p className="text-white-secondary text-xl md:text-2xl md:w-2/3">
+            <p className="text-xl text-white-secondary md:text-2xl md:w-2/3">
               You can find me on these platforms:
             </p>
           </div>
         </div>
         <div
-          className="flex flex-col items-start md:items-center mt-8 md:mt-0"
+          className="flex flex-col items-start mt-8 md:items-center md:mt-0"
           style={{ flexBasis: "50%" }}
         >
-          <ul className="text-white-secondary font-openSans font-bold space-y-5 md:text-2xl text-lg">
+          <ul className="space-y-5 text-lg font-bold text-white-secondary font-openSans md:text-2xl">
             <li>
               <a
-                href="https://github.com/splatboydev"
-                className="flex space-x-5 items-center hover:text-slate-300"
+                href="https://github.com/mshnas9"
+                className="flex items-center space-x-5 hover:text-slate-300"
               >
                 <FaGithub size={30} color="#3b82f6" />
                 <p>Github</p>
@@ -47,11 +47,21 @@ const Contact: FC = () => {
             </li>
             <li>
               <a
-                href="mailto:contact@splatboy-dev.xyz"
-                className="flex space-x-5 items-center hover:text-slate-300"
+                href="https://www.linkedin.com/in/mshnas9"
+                className="flex items-center space-x-5 hover:text-slate-300"
+              >
+                <FaLinkedin size={30} color="#3b82f6" />
+                <p>LinkedIn</p>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="mailto:mshnas9@gmail.com"
+                className="flex items-center space-x-5 hover:text-slate-300"
               >
                 <HiMail size={30} color="#3b82E1" />
-                <p>contact@splatboy-dev.xyz</p>
+                <p>mshnas9@gmail.com</p>
               </a>
             </li>
           </ul>

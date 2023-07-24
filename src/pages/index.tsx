@@ -36,21 +36,21 @@ const Home: FC = () => {
   return (
     <>
       <Head>
-        <Partytown debug={false} forward={['dataLayer.push']}/>
-        <title>Splatboy Dev</title>
+        <Partytown debug={false} forward={['dataLayer.push']} />
+        <title>Mohamad Shareef Portfolio</title>
         <meta
           name="description"
-          content="Splatboy Dev's Portfolio website."
+          content="Mohamad Shareef Portfolio."
         />
         <meta property="og:title" content="Splatboy Dev's portfolio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://splatboy-dev.xyz" />
-        <meta property="og:description" content="Splatboy Dev's portfolio website, built with Next.js." />
-        <meta property="description" content="Splatboy Dev's portfolio website, built with Next.js." />
+        <meta property="og:description" content="Mohamad Shareef Portfolio, built with Next.js." />
+        <meta property="description" content="Mohamad Shareef Portfolio, built with Next.js." />
         <meta name="theme-color" content="#FFF1" />
         <link rel="icon" href="static/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com&display=optional" />
-        <link href="./splatboy-dev.webp" sizes="100%" />
+        <link href="./shareef.png" sizes="100%" />
       </Head>
       <LayoutGroup>
         {typeof window !== "undefined" && <DynamicNav />}

@@ -37,19 +37,20 @@ const WorkCard: FC<Props> = ({
         damping: 15
       }}
       viewport={{ once: true }}
-      className="bg-bg-surface text-white px-10 py-8 flex flex-col space-y-2 rounded-sm transition-all duration-200 hover:drop-shadow-2xl"
+      className="flex flex-col px-10 py-8 space-y-2 text-white transition-all duration-200 rounded-sm bg-bg-surface hover:drop-shadow-2xl"
     >
-      <p className="text-white-secondary uppercase font-medium tracking-widest text-sm">
-        {techTitle}
-      </p>
-      <p className="font-medium text-xl tracking-wider name-gradient">{title}</p>
+      
+      <p className="text-xl font-medium tracking-wider name-gradient">{title}</p>
       <p className="text-white-secondary">{description}</p>
+      <p className="text-sm font-medium tracking-widest uppercase text-white-secondary">
+        Tech Stack: {techTitle}
+      </p>
       <div className="flex items-center space-x-2 font-medium text-xs !mt-3">
         <a
           href={repoLink}
           target="_blank"
           rel="noreferrer"
-          className="uppercase py-2 px-4 rounded-md outline outline-fuchsia-800 outline-0 transition-all hover:outline-4"
+          className="px-4 py-2 uppercase transition-all rounded-md outline outline-fuchsia-800 outline-0 hover:outline-4"
           style={{
             background:
               "linear-gradient(to bottom right, rgba(255, 0, 255, 0.15), rgba(196,80,196, 0.15))",
